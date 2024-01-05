@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 2s ease-in-out;
+  color: purple;
+}
+
+:root {
+  --purple: #ddc7f7;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple);
+}
+
+#container {
+  height: 70%;
+  width: 20%;
+  background: var(--purple);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0,0,0,0.5); */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+img {
+  margin-top: 20%;
+  height: 150px;
+  border: 7px solid var(--purple);
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+header,
+footer,
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  justify-content: baseline;
+}
+
+h2,
+h3 {
+  margin: 5%;
+}
+
+footer {
+  justify-content: end;
+}
+
+section {
+  margin: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+i {
+  font-size: 20px;
+  padding: 3%;
+  margin: 1%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+footer {
+  margin: 5%;
+}
+
+button {
+  padding: 7px 10px;
+  background: var(--purple);
+  border: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.container2 {
+  display: grid;
+  grid: 'petal1 petal2' 'petal3 petal4';
+  height: 70%;
+  width: 35%;
+  z-index: -1;
+  position: absolute;
+  rotate: 0deg;
+}
+
+.petal1 {
+  grid-area: petal1;
+  border-radius: 59% 41% 0% 100% / 39% 100% 0% 61%;
+
+}
+
+.petal2 {
+  grid-area: petal2;
+  border-radius: 48% 52% 100% 0% / 100% 59% 41% 0%;
+}
+
+.petal3 {
+  grid-area: petal3;
+  border-radius: 100% 0% 45% 55% / 51% 0% 100% 49%;
+}
+
+.petal4 {
+  grid-area: petal4;
+  border-radius: 0% 100% 70% 30% / 0% 30% 70% 100%;
+}
+
+.petal1,
+.petal2,
+.petal3,
+.petal4 {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5), 0px 0px 0px rgba(255,255,255,0.7);
+  
+}
